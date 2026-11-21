@@ -1,0 +1,7 @@
+PASS system dark follows in background, both shapes
+PASS 1.5x text grows overlay and remains within screen
+PASS landscape safe bounds
+PASS long target ellipsized with full tooltip and accessibility label
+PASS system disabled animations render final shapes
+PASS rotation cancels capture without sending
+OVERLAY_CONFIG_OK

@@ -1,0 +1,21 @@
+{
+  "environment": "Android 15 / API 35 ARM64 emulator, same host",
+  "scenario": "50 synthetic text/voice rows with ready transcripts, one main-thread refresh and following frame",
+  "before": {
+    "version": "0.6.5",
+    "messages": 50,
+    "updateMainMs": 13.474167,
+    "attachedViews": 690,
+    "frameCount": 2,
+    "maxFrameMs": 34.66401
+  },
+  "after": {
+    "version": "0.6.6-preview",
+    "messages": 50,
+    "updateMainMs": 0.699375,
+    "attachedViews": 78,
+    "frameCount": 1,
+    "maxFrameMs": 16.830667
+  },
+  "limits": "Single comparative sample; excludes network wait and is not a real-device FPS guarantee."
+}

@@ -1,0 +1,8 @@
+{
+  "version": "0.6.7",
+  "versionCode": 28,
+  "public_download_and_system_install": true,
+  "unique_install_uri": true,
+  "latest_check": true,
+  "overlay_preferences": "verified separately by overlay recreate test; upgrade-specific preference fixture failed to initialize, no preservation claim"
+}

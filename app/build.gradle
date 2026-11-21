@@ -1,0 +1,20 @@
+plugins { id 'com.android.application' }
+def vibeOrigin = providers.environmentVariable('VIBE_ORIGIN').getOrElse('https://vibe.example.com').trim().replaceAll('/$', '')
+if (!(vibeOrigin ==~ /https:\/\/[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+/)) {
+    throw new GradleException('VIBE_ORIGIN must be an HTTPS domain without a port or path')
+}
+android {
+    namespace 'chat.vibe.app'
+    compileSdk 35
+    defaultConfig {
+        applicationId 'chat.vibe.app'
+        minSdk 26
+        targetSdk 35
+        resValue 'string', 'vibe_origin', vibeOrigin.toLowerCase(java.util.Locale.ROOT)
+        versionCode 30
+        versionName '0.6.8'
+    }
+    compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+    buildTypes { release { minifyEnabled false } }
+}
+dependencies { implementation files('libs/zxing-core-3.5.3.jar') }

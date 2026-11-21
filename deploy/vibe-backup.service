@@ -1,0 +1,12 @@
+[Unit]
+Description=Back up Vibe Chat SQLite database
+[Service]
+Type=oneshot
+User=vibe
+Group=vibe
+ExecStart=/bin/bash /opt/vibe-chat/deploy/backup.sh
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/vibe /var/backups/vibe
+UMask=0077

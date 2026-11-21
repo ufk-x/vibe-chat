@@ -1,0 +1,18 @@
+PASS expanded window nominal 208 x 64 dp (body 200 x 56 dp), rounding <= 2 px
+PASS drag title moves window without accidental click
+PASS drag hint moves window without accidental click
+PASS drag collapse moves window without accidental click
+PASS outer padding drag
+PASS collapse releases unused screen area
+PASS compact drag without expand
+PASS shape and position persist across recreate
+PASS compact tap expands
+PASS hold starts mic, slide up cancels, no message and no movement
+PASS system CANCEL ends recording without sending
+PASS normal microphone release sends voice in demo mode
+PASS theme updates without restarting service
+PASS drag clamps to safe area and docks
+PASS drag cancellation over close target is safe
+PASS final release position is checked, not stale hover
+PASS drop onto close target hides overlay and leaves service active
+OVERLAY_CHECK_OK

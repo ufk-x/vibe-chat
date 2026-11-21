@@ -1,0 +1,7 @@
+{
+  "version": "0.6.8",
+  "versionCode": 30,
+  "public_download_and_system_install": true,
+  "unique_install_uri": true,
+  "latest_check": true
+}
